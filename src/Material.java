@@ -40,4 +40,8 @@ public abstract class Material implements Catalogable {
 
     public abstract String getTipo();
 
+    public String mostrarInfo(){
+        return "Tipo de material: " + getTipo() + ", Titulo: " + getTitulo() +
+                ", Año de publicación: " + getAnioPublicacion() + ", Disponible: " + isDisponibilidad();
+    }
 }
